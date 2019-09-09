@@ -1,0 +1,28 @@
+.ResultCard {   
+    padding: 10px 40px;
+    font-size: 13px;
+}
+
+.ResultCard > div {
+    margin: 0px 0px 5px;
+}
+
+.ResultCard .id {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ResultCard .name {
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.ResultCard .address {
+    font-size: 12px;
+}
+
+.ResultCard .itemsText {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0px;
+}
