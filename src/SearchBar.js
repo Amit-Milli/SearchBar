@@ -113,7 +113,6 @@ class SearchBar extends Component {
 
     render() {
         const { typedText, searchResults, hoveredCardId, keyPressStarted } = this.state;
-        console.log(searchResults);
         return (
             <div className="SearchBarContainer">
                 <img id='search' src={search} alt={'search icon'} />
@@ -122,11 +121,11 @@ class SearchBar extends Component {
                     searchResults: undefined,
                     hoveredCardId: undefined,
                 })}/>
-                <input type="text" placeholder='Search users by ID, address, name, pincode'
+                <input type="search" 
+                    placeholder='Search users by ID, address, name, pincode'
                     value={typedText}
-                    onChange={e => this.handleSearch(e)}
                     onKeyUp={e => e.which === 13 && this.handleSearch(e)}
-                    onFocus={e => e.preventDefault()}
+                    onChange={e => this.handleSearch(e)}
                     id='search-input'
                     style={ typedText.length > 0 ? { borderBottomLeftRadius: "unset", borderBottomRightRadius: "unset" } : {}}
                 />

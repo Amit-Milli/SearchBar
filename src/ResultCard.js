@@ -23,7 +23,7 @@ const ResultCard = ({ result }) => {
             }
             {
                 itemsText && 
-                <div className="itemsText"><span class="dot"></span> { itemsText }</div>
+                <div className="itemsText">{ itemsText }</div>
             }
             {
                 getHighlightedText(address, 'address')
